@@ -26,12 +26,12 @@ header {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   letter-spacing: 10px;
   font-weight: bolder;
-  color:rgba(11, 12, 11, 0.76);
+  color:rgb(0, 0, 0);
 }
 
 
 .header-logo {
-    background-image: url('../images/logo.png'); /* <-- относительный путь */
+    background-image: url(/images/logo.png); /* <-- относительный путь */
   background-size: contain;
   background-repeat: no-repeat;
   width: 100px;
@@ -136,28 +136,50 @@ header {
     font-weight: bold;
 }
 
+.info-box-person {
+  display: grid;
+  width: 100%;
+  min-height:150vh;
+  background-color: #ffffff;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  z-index: 7777;
+}
+
+
 .about-text1 {
-  background-color: #111;
+  background-color: #ffffff;
   border-radius: 6px;
   margin-left: 650px;
   margin-right: 650px;
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .about-text1:active {
   transform: scale(1.01);
-  color: #111;
+  color:white;
 }
 
 .about-text2 {
+  color: rgb(1, 1, 1);
   margin: 10px auto;
   max-width: 800px;
   text-align: center;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
   font-size: 15px;
+  border-radius: 5px;
+}
+
+.question-text1 {
+  border-radius: 6px;
+  margin-left: 650px;
+  margin-right: 650px;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(0, 0, 0);
 }
 
 .about-text2:hover {
@@ -180,21 +202,230 @@ header {
   transform: scale(1.05);
 }
 
-.about-hidden {
-  display: none;
+
+
+.person-workers-title {
+  margin-top: 50px;
   text-align: center;
-  margin-top: 10px;
-  transition: all 0.4s ease;
 }
 
-.toggle-about {
+/* Блоки работников */
+.person1-box {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  flex-direction: column;
+  text-align: start;
+}
+
+.person2-box {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  flex-direction: column;
+  text-align: start;
+}
+
+.person3-box {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  flex-direction: column;
+  text-align: start;
+}
+
+.person4-box {
+  display: flex;
+  width: 200px;
+  height: 200px;
+   flex-direction: column;
+  text-align: start;
+
+}
+
+/* Имена работников */
+.person1-name {
+  text-align: center;
+}
+
+.person2-name {
+  text-align: center;
+}
+
+.person3-name {
+  text-align: center;
+}
+
+.person4-name {
+  text-align: center;
+}
+
+/* Должности работников */
+.person1-job {
+  text-align: center;
+}
+
+.person2-job {
+  text-align: center;
+}
+
+.person3-job {
+  text-align: center;
+}
+
+.person4-job {
+  text-align: center;
+}
+
+
+
+/* Фото работников */
+.person1-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 500px;
+  transition: all 0.3s ease;
+}
+
+
+.person2-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 70px;
+  transition: all 0.3s ease;
+}
+
+.person3-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.person4-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 500px;
+  transition: all 0.3s ease;
+}
+
+/* Подробнее */
+.person1-more {
+  text-align: center;
+  border: 1px solid #000000;
   cursor: pointer;
+  border-radius: 500px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.person1-more:hover {
+  transform: scale(1.05);
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.person1-img:hover {
+  transform: scale(1.05);
+}
+
+.person2-more {
   text-align: center;
-  user-select: none;
+  border: 1px solid #000000;
+  cursor: pointer;
+  border-radius: 500px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.person2-more:hover {
+  transform: scale(1.05);
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.person2-img:hover {
+  transform: scale(1.05);
+}
+
+.person3-more {
+  text-align: center;
+  border: 1px solid #000000;
+  cursor: pointer;
+  border-radius: 500px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.person3-more:hover {
+  transform: scale(1.05);
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.person3-img:hover {
+  transform: scale(1.05);
+}
+
+.person4-more {
+  text-align: center;
+  border: 1px solid #000000;
+  cursor: pointer;
+  border-radius: 500px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.person4-more:hover {
+  transform: scale(1.05);
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.person4-img:hover {
+  transform: scale(1.05);
 }
 
 
 
+
+
+/* Описания работников */
+.person1-description {
+  display: none;
+  padding: 10px;
+  width: 50%;
+  height: 100px;
+  text-align: center;
+}
+
+.person1-description:hover {
+  
+}
+
+.person2-description {
+  display: none;
+  padding: 10px;
+  width: 50%;
+  height: 100px;
+  text-align: center;
+}
+
+.person3-description {
+  display: none;
+  padding: 10px;
+  width: 50%;
+  height: 100px;
+  text-align: center;
+}
+
+.person4-description {
+  display: none;
+  padding: 10px;
+  width: 50%;
+  height: 100px;
+  text-align: center;
+}
 
 
 .tooltip-wrapper {
